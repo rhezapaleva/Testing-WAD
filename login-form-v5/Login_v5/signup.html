@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include CSS files -->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+   
+    
+</head>
+<body>
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+            <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
+                <form class="login100-form validate-form flex-sb flex-w" id="myForm" >
+                    <span class="login100-form-title p-b-53">
+                        Sign Up
+                    </span>
+
+                    <!-- Add your signup form fields here -->
+                    <div class="p-t-31 p-b-9">
+                        <span class="txt1">
+                            Full Name
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Full Name is required">
+                        <input class="input100" type="text" name="full_name">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="p-t-13 p-b-9">
+                        <span class="txt1">
+                            Email
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="email">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="p-t-13 p-b-9">
+                        <span class="txt1">
+                            Password
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <input class="input100" type="password" name="pass">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <!-- End of signup form fields -->
+
+                    <div class="container-login100-form-btn m-t-17">
+                        <button class="login100-form-btn" id="signup">
+                            Sign Up
+                        </button>
+                    </div>
+
+                    <div class="w-full text-center p-t-55">
+                        <span class="txt2">
+                            Already a member?
+                        </span>
+                        <a href="login.html" class="txt2 bo1">
+                            Log In
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="dropDownSelect1"></div>
+
+    <!-- Include JavaScript files -->
+    <!-- <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <script src="js/main.js"></script> -->
+    <!-- <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyD8jNipNLpSjTmXQpIysHKjy9ilPmo_Sbw",
+          authDomain: "pro-planet-389805.firebaseapp.com",
+          projectId: "pro-planet-389805",
+          storageBucket: "pro-planet-389805.appspot.com",
+          messagingSenderId: "902798693986",
+          appId: "1:902798693986:web:300bc3214a5b63a015e33b",
+          measurementId: "G-E6C6MR8WE2"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        
+
+        import { getAuth , createUserWithEmailAndPassword,connectAuthEmulator} from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js';
+        
+        export const auth = getAuth(app);
+        console.log(auth)
+
+        
+     
+
+
+    </script> -->
+    <script src="js/firebaseconfig.js" type="module"></script>
+   <script src="js/auth.js" type="module"></script>
+   
+   
+   
+
+</body>
+</html>
