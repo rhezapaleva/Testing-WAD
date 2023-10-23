@@ -13,7 +13,7 @@
   </div>
 </div>
 </div>
-  <v-container class="gig-overview">
+  
     <h1> I will design responsive website for your business</h1>
   
     <v-container>
@@ -32,7 +32,7 @@
       </v-col>
     </v-row>
   </v-container>
-</v-container>
+
 </v-container>
 
  

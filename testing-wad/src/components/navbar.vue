@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
     <nav class="site-nav">
-            <div class="container">
+            
                 <div class="menu-bg-wrap">
                     <div class="site-navigation">
                         <a href="index.html" class="logo m-0 float-start">BookMe</a>
@@ -39,7 +39,7 @@
 
                     </div>
                 </div>
-            </div>
+            
         </nav>
 </template>
 
@@ -47,13 +47,14 @@
 
 </script>
 
-<style>
+<style> 
 .menu-bg-wrap {
   background-color: #005555;
   padding: 20px 30px;
   position: relative;
   float: left;
   width: 100%;
+  overflow: hidden;
   border-radius: 7px;
   -webkit-box-shadow: 0 15px 30px -15px rgba(0, 0, 0, 0.1);
   box-shadow: 0 15px 30px -15px rgba(0, 0, 0, 0.1); }
