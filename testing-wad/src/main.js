@@ -3,8 +3,12 @@ import './assets/main.css';
 import '../../css/style.css'
 
 // Import Bootstrap and BootstrapVue CSS files (order is important)
+
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
+import 'bootstrap/dist/css/bootstrap.css'
+//eslint-disable-next-line
+import bootstrap from'bootstrap/dist/js/bootstrap.bundle.js'
 
 // Make BootstrapVue available throughout your project
 
