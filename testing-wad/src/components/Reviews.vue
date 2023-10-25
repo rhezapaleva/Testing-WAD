@@ -5,7 +5,7 @@
         <!-- Write a Review Section -->
         <h2>Write a Review</h2>
         <v-textarea v-model="newReview" label="Write your review" rows="4"></v-textarea>
-        <v-btn @click="addReview" color="primary">Submit</v-btn>
+        <v-btn @click="addReview" color="#4ABDAC">Submit</v-btn>
       </v-col>
       
       <v-col cols="6">
@@ -84,4 +84,5 @@ export default {
 .existing-reviews-card {
   margin-bottom: 20px;
 }
+
 </style>

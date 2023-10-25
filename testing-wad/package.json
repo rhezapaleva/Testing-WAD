@@ -9,8 +9,12 @@
   },
   "dependencies": {
     "@vue/compat": "^3.3.4",
+    "axios": "^1.5.1",
     "bootstrap": "^5.3.2",
     "bootstrap-vue": "^2.23.1",
+    "calendly-vue": "^0.1.15",
+    "express": "^4.18.2",
+    "stripe": "^14.1.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4",
     "vuetify": "^3.3.21"
