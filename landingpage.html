@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel ="stylesheet" href="style2.css">
+    
+    
+    <title>Book Me</title>
+</head>
+<body>
+
+<div class="firstelement container-fluid">
+    <div class="content">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class=" navibar container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/Logo.png " alt="Logo" style='height:40px'></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search for any service " aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                            </a>
+                            <ul id="dropdowncolor" class="dropdown-menu ">
+                                <li><a class="dropdown-item text-light " href="#">Look for services</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Provide services</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">About</a>
+                        </li>
+                        
+                        <li class="nav-item ">
+                            <a class="nav-link text-light" href="personalsettings.html">My Profile</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link text-light" href="login-form-v5\Login_v5\login.html">Log In</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link text-light" href="login-form-v5\Login_v5\signup.html">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+		<div class="firstcarousel carousel-inner">
+			<div class="carousel-item active">
+				<img src="images/barbers-in-singapore.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="images/photographer.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="images/Makeup.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="images/plumber.jpg" class="d-block w-100" alt="...">
+			</div>
+		</div>
+		<div class="text-center">
+			<p id="carouseltext">Easiest way to find your desired services</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="firstcard container-fluid mb-5">
+    <div class="row mt-3 mb-5 align-items-center">
+        <div class="col-lg-6">
+            <h2 class="font-weight-bold text-black heading">Popular Services</h2>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+            <p><a href="#" target="_blank" class="btn btn-primary text-white py-3 px-4">View all services</a></p>
+        </div>
+    </div>
+
+    <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel">		
+		<div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="servicecards">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="images/photo_1.jpg" alt="...">
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">Photography</h5>
+                        <p class="card-text">Get the shots you desire!</p>
+                        <a href="#" class="btn btn-primary">See details</details></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="images/photo_2.jpg" alt="...">
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">Make Up Services</h5>
+                        <p class="card-text">Look your best!</p>
+                        <a href="#" class="btn btn-primary">See details</details></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="images/photo_3.jpg" alt="...">
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">Manicure</h5>
+                        <p class="card-text">Transform your fingertips!</p>
+                        <a href="#" class="btn btn-primary">See details</details></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="carousel-item">
+                <div class="servicecards">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="images/photo_4.jpg" alt="...">
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">Massage</h5>
+                        <p class="card-text">Relax and unwind!</p>
+                        <a href="#" class="btn btn-primary">See details</details></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="images/photo_5.jpg" alt="...">
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">Hairdressing</h5>
+                        <p class="card-text">Redefine your style!</p>
+                        <a href="#" class="btn btn-primary">See details</details></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="images/photo_6.jpg" alt="...">
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">Plumbing</h5>
+                        <p class="card-text">Get your pipes fixed!</p>
+                        <a href="#" class="btn btn-primary">See details</details></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="carousel-item">
+                <div class="servicecards">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="images/photo_7.jpg" alt="...">
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">Electricians</h5>
+                        <p class="card-text">Light it up!</p>
+                        <a href="#" class="btn btn-primary">See details</details></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="images/photo_8.jpg" alt="...">
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">Accessories and crafts</h5>
+                        <p class="card-text">Elevate your look!</p>
+                        <a href="#" class="btn btn-primary">See details</details></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="images/photo_9.jpg" alt="...">
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">Bakes</h5>
+                        <p class="card-text">Satisfy your cravings!</p>
+                        <a href="#" class="btn btn-primary">See details</details></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+	</div>
+</div>
+
+<div class="features container mt-3">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card custom-card1 mb-4" style="max-width: none;">
+                <div class="card-body text-center">
+                    <span class="icon-users display-4"></span>
+                    <h5 class="card-title mt-3">Our Services</h5>
+                    <p class="card-text">Unlock a world of possibilities with our diverse range of services, tailored to meet your every need.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card custom-card1 mb-4" style="max-width: none;">
+                <div class="card-body text-center">
+                    <span class="icon-people display-4"></span>
+                    <h5 class="card-title mt-3">Service Provider</h5>
+                    <p class="card-text">Unlock Your Business Potential: Elevate Your Sales with Our Cutting-Edge Platform!</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card custom-card1 mb-4" style="max-width: none;">
+                <div class="card-body text-center">
+                    <span class="icon-book display-4"></span>
+                    <h5 class="card-title mt-3">Support and Education</h5>
+                    <p class="card-text">Experience excellence in service and support like never before - where your needs are our priority.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+	<div class="section section-4">
+		<div class="container-fluid">
+			<div class="row justify-content-center  text-center mb-5">
+				<div class="col-lg-5">
+					<h2 class="pt-4 font-weight-bold heading text-primary mb-4">Let's find the service that you are looking for! </h2>
+					<p class="text-black-50">It's not that hard to find the one you need!</p>
+				</div>
+			</div>
+			<div class="row justify-content-between mb-5">
+				<div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
+					<div>
+						<img src="images/back.jpg" alt="Image" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="d-flex feature-h">
+						<span class="wrap-icon me-3">
+							<span class="icon-search"></span>
+						</span>
+						<div class="feature-text">
+							<h3 class="heading">Ease of search and booking</h3>
+							<p class="text-black-50">Streamline your search and booking experience with effortless efficiency!</p>   
+						</div>
+					</div>
+
+					<div class="d-flex feature-h">
+						<span class="wrap-icon me-3">
+							<span class="icon-person"></span>
+						</span>
+						<div class="feature-text">
+							<h3 class="heading">Wide variety of services</h3>
+							<p class="text-black-50">Find a wide range of service that caters to your specific needs! </p>   
+						</div>
+					</div>
+
+					<div class="d-flex feature-h">
+						<span class="wrap-icon me-3">
+							<span class="icon-security"></span>
+						</span>
+						<div class="feature-text">
+							<h3 class="heading">Hassle-free and safe payment</h3>
+							<p class="text-black-50">Say goodbye to the complexities of traditional transactions and embrace seamless, effortless financial freedom!</p>   
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section section-5 bg-light">
+		<div class="container">
+			<div class="row justify-content-center  text-center mb-5">
+				<div class="col-lg-6 mb-5">
+					<h2 class="font-weight-bold heading text-primary mb-4">Our Cilents</h2>
+					<p class="text-black-50">Let's hear what they say</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
+					<div class="h-100 person">
+
+						<img src="images/person_1-min.jpg" alt="Image"
+						class="img-fluid rounded-circle">
+
+						<div class="person-contents">
+							<h2 class="mb-0">James Doe</h2>
+							<span class="meta d-block mb-3 mt-1">Photographer</span>
+							<p>Book Me streamlined my workflow, making it effortless to showcase my portfolio, connect with potential clients, and efficiently manage bookings, ultimately boosting my online visibility and business growth.</p>
+
+							<ul class="social list-unstyled list-inline dark-hover">
+								<li class="list-inline-item"><a href="#"><span class="icon-twitter"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="icon-facebook"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="icon-linkedin"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="icon-instagram"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
+					<div class="h-100 person">
+
+						<img src="images/person_2-min.jpg" alt="Image"
+						class="img-fluid rounded-circle">
+
+						<div class="person-contents">
+							<h2 class="mb-0">Jean Smith</h2>
+							<span class="meta d-block mb-3 mt-1">Hairdresser</span>
+							<p>Book Me has helped me significantly by establishing an online presence and effectively marketing my services, ultimately attracting a larger clientele and boosting my own business.</p>
+
+							<ul class="social list-unstyled list-inline dark-hover">
+								<li class="list-inline-item"><a href="#"><span class="icon-twitter"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="icon-facebook"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="icon-linkedin"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="icon-instagram"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
+					<div class="h-100 person">
+						<img src="images/person_3-min.jpg" alt="Image" class="img-fluid rounded-circle">
+						<div class="person-contents">
+							<h2 class="mb-0">Alicia Huston</h2>
+							<span class="meta d-block mb-3 mt-1">Make-up Artist</span>
+							<p>Book Me helped me to streamline appointment scheduling and showcase my portfolio, significantly boosting my client base and overall business success.</p>
+							<ul class="social list-unstyled list-inline dark-hover">
+								<li class="list-inline-item">
+									<a href="#"><span class="icon-twitter"></span></a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#"><span class="icon-facebook"></span></a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#"><span class="icon-linkedin"></span></a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#"><span class="icon-instagram"></span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="site-footer py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>Contact</h3>
+						<address>80 Stamford Rd, Singapore 178902</address>
+						<ul class="list-unstyled links">
+							<li>+65 6123 4567</li>
+							<li><a href="mailto:info@mydomain.com">G19@IS216project.com</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>Links</h3>
+						<ul class="list-unstyled links">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+
+
+
+</html>

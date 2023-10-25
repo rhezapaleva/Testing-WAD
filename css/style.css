@@ -522,6 +522,15 @@ progress {
   margin-right: auto;
   margin-left: auto; }
 
+  .photo-container {
+    width: 123px;
+    height: 123px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    object-fit: cover; }
+
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px; } }
@@ -2047,8 +2056,7 @@ textarea.form-control-lg {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-print-color-adjust: exact;
-  color-adjust: exact; }
+ }
   .form-check-input[type="checkbox"] {
     border-radius: 0.25em; }
   .form-check-input[type="radio"] {
@@ -6895,8 +6903,9 @@ textarea.form-control-lg {
   color: #6c757d !important; }
 
 .text-black-50, body {
-  --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important; }
+  font-size: 15px;
+  color:black !important; }
+
 
 .text-white-50 {
   --bs-text-opacity: 1;
@@ -10375,3 +10384,16 @@ nav[aria-label="breadcrumb"] li:before {
       .site-footer .social li a:hover {
         background: #00204a;
         color: #fff; }
+
+      .nav-link.active, .navbar-brand {
+        font-size: 1.2rem; /* Increase the font size */
+        transition: font-size 0.2s; /* Add a smooth transition effect */
+      }
+      
+      .rating {
+        cursor: pointer;
+      }
+
+      .rating:hover {
+        background-color: lightgray;
+      }
