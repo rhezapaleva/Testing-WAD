@@ -24,6 +24,8 @@ body {
 /*nav bar*/
 .navibar{
     background-color: #4F7369;
+    padding: 5px;
+    border-radius: 20px;
 }
 
 #dropdowncolor{
@@ -31,7 +33,7 @@ body {
 }
 
 .dropdown-item:hover{
-    background-color: #7EBFB3;
+    background-color: #194759;
 }
 .navbar{
     padding: 0px;
