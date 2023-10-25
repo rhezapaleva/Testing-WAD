@@ -138,13 +138,22 @@
 					</nav>
 
 					<div id="content">
-						<div class="card text-center mb-3" style="width: 18rem;">
-							<div class="card-body">
-							  <h5 class="card-title">You have not made any bookings</h5>
-							  <p class="card-text">Let's go look for one!</p>
-							  <a href="#" class="btn btn-primary">Search</a>
-							</div>
-						  </div>
+						<form id="profile-update-form">
+                            <div class="list-group-item">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" class="form-control" style="padding: 5px;" placeholder="Change your Display Name">
+                            </div>
+                            <div class="list-group-item">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" class="form-control" style="padding: 5px;" placeholder="Change your Username">
+                            </div>
+                            <div class="list-group-item">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" style="padding: 5px;" placeholder="Change your Email">
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Update</button>
+                        </form>
+                        
 					  </div>
 				
 				  </div>

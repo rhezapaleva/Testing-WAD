@@ -99,5 +99,9 @@ document.addEventListener("DOMContentLoaded", function() {
       reviewsLink.classList.remove("active");
       profileLink.classList.remove("active");
     }
+
+    const customNavbar = document.getElementById("custom-navbar");
+    customNavbar.style.justifyContent = "flex-start";
+    
   });
   

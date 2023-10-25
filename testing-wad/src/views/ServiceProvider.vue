@@ -6,7 +6,7 @@
   <Suggested/>
   <Footer/> -->
   
-    <div>
+    <div class="navbar">
       <navbar />
     </div>
 

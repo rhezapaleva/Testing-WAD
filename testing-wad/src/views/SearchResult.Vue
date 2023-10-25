@@ -1,4 +1,3 @@
-
 <template>
 <v-container>
     <div class="serviceproviderprofile">
@@ -8,6 +7,7 @@
         <div class="services">
           <Services />
         </div>
+        
         <div class="reviews">
           <Reviews/>
         </div>
