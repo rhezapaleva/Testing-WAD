@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-pie.min.js"></script>
+
+
+	<title>Hello this is wad</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-expand bg-body-tertiary">
+		<div class="container-fluid">
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon">insert image here</span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<a class="navbar-brand" href="#"><img src="images/BookMeLogo.png" style="width: 150px; height: 100px;"></a>
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link" href="sphome.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
+			  </li>
+			  <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Marketing Guides
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="learn.html">learn</a></li>
+                  <li><a class="dropdown-item" href="permits.html">Permits/</a></li>
+                </ul>
+              </li>
+			  <!-- <li class="nav-item">
+				<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+			  </li> -->
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+
+		<div class="container-fluid" style="background-color:#4abdac ;border-radius: 5px;">
+			<div class="row mb-3 align-items-center">
+				<div class="col-md-6 col-12">
+					<h2 class="font-weight-bold text-primary heading mt-5">Your Executive Dashboard</h2>
+				</div>
+				<!-- <div class="col-lg-6 text-lg-end">
+					<p><a href="#" target="_blank" class="btn btn-primary text-white py-3 px-4">View all properties</a></p>
+				</div> -->
+				</div>
+				<div class="row" style="margin: 0;">
+					<div class="col-md-4 col-12  py-3" data-aos="fade-up" data-aos-delay="300">
+						<div class="box-feature" style="height:50%;padding-top: 0px;padding-bottom: 50px;padding-left: 5px;margin-bottom: 0;">
+						<!-- help how to put calendar icon -->
+						<p style="font-weight: 100;">Auto date range</p>
+						<p class="flaticon-house"style="font-weight: bold; font-size:16px;">This Month</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12 py-3" data-aos="fade-up" data-aos-delay="300">
+						<div class="box-feature" style="height:50%;padding-top: 0px;padding-bottom: 50px;padding-left: 5px;margin-bottom: 0;">
+						<!-- help how to put calendar icon -->
+						<p style="font-weight: 100;">Services</p>
+						<p class="flaticon-house"style="font-weight: bold; font-size:16px;">All</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12 py-3" data-aos="fade-up" data-aos-delay="300">
+						<div class="box-feature" style="height:50%;padding-top: 0px;padding-bottom: 50px;padding-left: 5px;margin-bottom: 0;">
+						<!-- help how to put calendar icon -->
+						<p style="font-weight: 100;">Posts</p>
+						<!-- how to add dropdown -->
+						<p class="flaticon-house"style="font-weight: bold; font-size:16px;">All</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-6"  data-aos="fade-up" data-aos-delay="300">
+						<div class="box-feature">
+							<h3 class="mb-3">New Sales (/day/month?)</h3>
+							<div style="text-align: center;">
+							<h1>230</h1>
+							<h2 style="color:green; font-weight:200;">25%</h2>
+							<p style="font-weight:100;">vs previous month</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-6"  data-aos="fade-up" data-aos-delay="500">
+						<div class="box-feature">
+							<h3 class="mb-3">Business Growth Rate</h3>
+							<div style="text-align: center;">
+								<h1>17.23%</h1>
+								<h2 style="color:green; font-weight:200;">25%</h2>
+								<p style="font-weight:100;">vs previous month</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-6"  data-aos="fade-up" data-aos-delay="400">
+						<div class="box-feature">
+							<h3 class="mb-3">Monthly Recurring Revenue (MRR)</h3>
+							<div style="text-align: center;">
+								<h1>$4,596</h1>
+								<h2 style="color:green; font-weight:200;">7.8%</h2>
+								<p style="font-weight:100;">vs previous month</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-6"  data-aos="fade-up" data-aos-delay="600">
+						<div class="box-feature flaticon-pie-chart">
+							<h3 class="mb-3">Webpage Views</h3>
+							<div id="container"></div>
+								<script>
+								anychart.onDocumentReady(function () {  
+									// add the data
+									var data = anychart.data.set([
+									["Referral", 1],
+									["Direct", 2],
+									["Organic Search", 7]
+									]);
+									// create a pie chart instance with the passed data
+									var chart = anychart
+									.pie(data)
+									// set the inner radius to make a donut chart
+									.innerRadius("55%");
+									// set the container id for the chart
+									chart.container("container");
+									// draw the resulting chart
+									chart.draw();
+								});
+								</script>
+						</div>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-12"  data-aos="fade-up" data-aos-delay="400">
+						<div class="box-feature">
+							<h3 class="mb-3">Business Progress (growth since start)</h3>
+							<img src="images/hero_bg_1.jpg" style="height: 400px;max-width: 400px;">
+						</div>
+					</div>
+					<div class="col-md-6 col-12"  data-aos="fade-up" data-aos-delay="400">
+						<div class="box-feature">
+							<h3 class="mb-3">MRR</h3>
+							<img src="images/hero_bg_2.jpg" style="height: 400px;max-width: 400px;">
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+	<div class="row mt-5">
+		<div class="col-12 text-center">
+			<!-- 
+	  **==========
+	  NOTE: 
+	  Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+	  **==========
+	-->
+
+	<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> <!-- License information: https://untree.co/license/ -->
+	</p>
+
+  </div>
+</div>
+
+
+
+
+    <!-- Preloader -->
+    <!-- <div id="overlayer"></div>
+    <div class="loader">
+    	<div class="spinner-border" role="status">
+    		<span class="visually-hidden">Loading...</span>
+    	</div>
+    </div> -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+  </html>
