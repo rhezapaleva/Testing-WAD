@@ -2056,8 +2056,7 @@ textarea.form-control-lg {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-print-color-adjust: exact;
-  color-adjust: exact; }
+ }
   .form-check-input[type="checkbox"] {
     border-radius: 0.25em; }
   .form-check-input[type="radio"] {
@@ -6904,8 +6903,9 @@ textarea.form-control-lg {
   color: #6c757d !important; }
 
 .text-black-50, body {
-  --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important; }
+  font-size: 15px;
+  color:black !important; }
+
 
 .text-white-50 {
   --bs-text-opacity: 1;
