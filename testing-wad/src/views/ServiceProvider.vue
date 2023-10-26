@@ -10,18 +10,19 @@ import Footer from '../components/Footer.vue';
 import SearchBar from '../components/SearchBar.vue';
 import SellerContent from '../components/SellerContent.vue';
 import Suggested from '../components/Suggested.vue';
-import NavBar from '../components/NavBar.vue';
 
-const redirectToStripe = async () => {
-isLoading.value = true;
 
-const response = await fetch("/api/create-checkout-session", {
-  method: "POST",
-});
-const { url } = await response.json();
+// const redirectToStripe = async () => {
+// isLoading.value = true;
 
-window.location.href = url;
-};
+// const response = await fetch("/api/create-checkout-session", {
+//   method: "POST",
+// });
+// const { url } = await response.json();
+
+// window.location.href = url;
+// };
+
 
 
 
@@ -41,11 +42,11 @@ window.location.href = url;
   </div>
       
       <div >
-        <div class="scheduling"> 
+        <div id="scheduling"> 
         <Scheduling />
       </div>
             
-      <div>
+      <div id="payment">
         <Payment />
       </div>
       </div>
@@ -117,6 +118,9 @@ window.location.href = url;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
+  }
+  #payment{
+    margin-left: 20pxz;
   }
    
    
