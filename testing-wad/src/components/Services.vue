@@ -54,7 +54,8 @@
   
   <style scoped>
   .services {
-    padding: 20px;
+    /* padding: 20px; */
+    z-index: 100;
   }
   
   .services ul {

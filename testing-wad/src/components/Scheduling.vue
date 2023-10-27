@@ -1,37 +1,32 @@
+<script>
+
+window.onload = function(){Calendly.initInlineWidget({
+ url: 'https://calendly.com/dominicj-2022',
+parentElement: document.getElementById('calendar'),
+});}
+//  window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/dominicj-2022', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }
+// Calendly.initInlineWidget({
+//  url: 'https://calendly.com/dominicj-2022',
+ 
+// });
+
+
+</script>
 
 <template>
-    <div class="scheduling">
+    
       <h2>Schedule an Appointment</h2>
-      <VDatePicker></VDatePicker>
-  </div>
+
+      <div id="calendar" style="min-width:320px;height:750px;"></div>
+      <!-- <CalendlyVue url="dominicj-2022" @event="logEvent" @event-details="logEvent" @error="logEvent"></CalendlyVue> -->
+    
+  
+  
   </template>
   
-  <script>
-  import { VDatePicker } from 'vuetify/lib/labs/components.mjs';
 
-  export default {
-    data() {
-        return {
-            selectedDate: '',
-            selectedTime: '',
-        };
-    },
-    methods: {
-        scheduleAppointment() {
-            // Implement the logic to schedule the appointment using the selected date and time
-            // You can use an event to notify the parent component about the selected appointment.
-            const appointment = {
-                date: this.selectedDate,
-                time: this.selectedTime,
-            };
-            this.$emit('schedule-appointment', appointment);
-        },
-    },
-    components: { VDatePicker }
-};
-  </script>
-  
   <style scoped>
+   /* style="min-width:320px;height:580px;" */
   .scheduling {
     padding: 20px;
   }
@@ -47,5 +42,7 @@
     padding: 5px 10px;
     cursor: pointer;
   }
+
+
   </style>
   
