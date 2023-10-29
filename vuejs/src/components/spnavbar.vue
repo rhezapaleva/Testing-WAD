@@ -1,8 +1,8 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top-navbar">
-    <div class="container">
+    <div class="container" style="margin-left:0px;">
       <!-- Logo -->
-      <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px"></a>
+      <a class="navbar-brand"><img src="../../public/BookMeLogo.png" alt="Logo" style="height: 100px; width:150px;"></a>
       <!-- Toggle Button -->
       <button
         class="navbar-toggler"
@@ -22,16 +22,6 @@
         id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel"
       >
-        <!-- Sidebar Header -->
-        <div class="offcanvas-header text-white border-white">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../../public/BookMeLogo.png" style="height: 40px;"></h5>
-          <button
-            type="button"
-            class="btn-close btn-close-white shadow-none"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
         <!-- Sidebar Body -->
         <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
           <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
@@ -39,7 +29,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#about">Dashboard</a>
+              <router-link to="/Dashboard" style="text-decoration: none;">Dashboard</router-link>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#about">Learning Avenue</a>
@@ -48,7 +38,7 @@
               <a class="nav-link" href="#about">Permits/Requirements</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#about" style="color:green;margin-left:600px">Switch to Buying</a>
+              <a class="nav-link" href="#about" style="color: green ; margin-left:150px">Switch to Buying</a>
             </li>
           </ul>
         </div>

@@ -2,6 +2,7 @@
 <div class="spnavbar">
 		<spnavbar />
 </div>
+
 		
 		<div class="container-fluid" style="background-color:lightgray ;border-radius: 5px;">
 			<div class="row mb-3 align-items-center">
