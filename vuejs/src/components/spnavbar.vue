@@ -58,20 +58,11 @@
 </template>
 
 <script>
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'jquery'
-import 'popper.js'
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min.js'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import 'bootstrap/dist/js/bootstrap.bundle.js'
-import 'bootstrap/dist/js/bootstrap.js'
 
 export default {
-  name: 'navbar',
+  name: 'spnavbar',
 };
+
 </script>
 
 <style>
@@ -105,9 +96,9 @@ color: rgb(56, 56, 56);
 width:300px
 }
 
-.maincontent{
+/* .maincontent{
 background: url('images/bg.jpg') rgba(0,0,0,0.3);
-}
+} */
 
 .sticky-top-navbar {
 position: sticky;

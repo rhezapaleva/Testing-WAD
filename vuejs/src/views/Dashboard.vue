@@ -1,56 +1,13 @@
-<script>
-anychart.onDocumentReady(function () {  
-									// add the data
-									var data = anychart.data.set([
-									["Referral", 1],
-									["Direct", 2],
-									["Organic Search", 7]
-									]);
-									// create a pie chart instance with the passed data
-									var chart = anychart
-									.pie(data)
-									// set the inner radius to make a donut chart
-									.innerRadius("55%");
-									// set the container id for the chart
-									chart.container("container");
-									// draw the resulting chart
-									chart.draw();
-								});
-
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'jquery'
-import 'popper.js'
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min.js'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import 'bootstrap/dist/js/bootstrap.bundle.js'
-import 'bootstrap/dist/js/bootstrap.js'
-
-</script>
 <template>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<meta name="description" content="" />
-	<meta name="keywords" content="bootstrap, bootstrap5" />
-
-
-	<title>Hello this is wad</title>
-</head>
-<body>
-
+<div class="spnavbar">
+		<spnavbar />
+</div>
+		
 		<div class="container-fluid" style="background-color:lightgray ;border-radius: 5px;">
 			<div class="row mb-3 align-items-center">
 				<div class="col-md-6 col-12">
 					<h2 class="font-weight-bold text-primary heading mt-5">Your Executive Dashboard</h2>
 				</div>
-				<!-- <div class="col-lg-6 text-lg-end">
-					<p><a href="#" target="_blank" class="btn btn-primary text-white py-3 px-4">View all properties</a></p>
-				</div> -->
 				</div>
 				<div class="row mb-3">
 					<div class="col-md-3 col-12 mx-3" data-aos="fade-up" data-aos-delay="300" style="height:80%;border: 2px solid white; border-radius:5px;background-color: white; ">
@@ -108,14 +65,20 @@ import 'bootstrap/dist/js/bootstrap.js'
 
 
 
-
-
-
-
-
-  </body>
-  </html>
-
-
-
 </template>
+
+<script>
+
+import spnavbar from "../components/spnavbar.vue";
+  
+  export default {
+    components: {
+    spnavbar,
+},
+  };
+
+</script>
+
+<style>
+
+</style>
