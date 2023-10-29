@@ -53,13 +53,17 @@
 					</div>	
 				</div>
 				<div class="row mb-3">
-					<div class="col-md-6 col-12 mx-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
+					<div class="col-md-6 col-12 mx-3 my-4"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
+						<div>
 						<h3 class="mb-3">Business Progress</h3>
-						<img src="images/success.png" style="height: 400px;width: 700px;">
+						<img src="../../public/BookMeLogo.png" style="height:90%;width: 100%; padding-bottom: 15px;">
+						</div>
 					</div>
 					<div class="col-md-5 col-12"  data-aos="fade-up" data-aos-delay="400" style="margin-left:40px;border: 2px solid white; border-radius:5px;background-color: white; ">
+						<div>
 						<h3 class="mb-3">MRR</h3>
-						<img src="images/MRRexample.png" style="height: 400px;width: 560px;">
+						<img src="../../public/BookMeLogo.png" style="height:90%;width: 100%;">
+					</div>
 					</div>
 				</div>
 			</div>
