@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap Responsive Navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="vh-100">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top-navbar">
+      <div class="container">
+        <!--Logo-->
+        <a class="navbar-brand fs-4" href="#" style="color: black">Book Me</a>
+        <form class="d-none d-md-flex d-lg-flex" role="search">
+          <input
+            class="formsearch form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            style="width: 300px"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <!--Toggle BTN-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-bars" aria-hidden="true" style="color: #1c1c1c"></i>
+          </span>
+        </button>
+
+        <!--SideBar-->
+        <div
+          class="sidebar offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <!--Sidebar Header-->
+          <div class="offcanvas-header text-white border-white">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Book Me</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white shadow-none"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!--Sidebar body-->
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+            <ul
+              class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3"
+            >
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#about">Services</a>
+              </li>
+              <!-- <li class="nav-item mx-2">
+                <a class="nav-link" href="#about">Contact</a>
+              </li> -->
+            </ul>
+
+            <!--Login/Sign up-->
+            <div
+              class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
+            >
+              <a href="#login" class="text-black text-decoration-none">Login</a>
+              <a
+                href="#signup"
+                class="signupBut text-decoration-none px-3 py-1 rounded-1"
+                style="white-space: nowrap"
+                >Sign up</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- First picture -->
+    <div class="maincontent container-fluid">
+      <main class="container mt-5">
+        <section
+          class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-white fs-1"
+        >
+          <h1 style="font-size: 1.5em">
+            Easiest way to find your desired services
+          </h1>
+        </section>
+      </main>
+    </div>
+
+    <!-- Carousel of Images -->
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/barbers-in-singapore.jpg"
+            class="d-block w-100"
+            alt="Image 1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/photographer.jpg"
+            class="d-block w-100"
+            alt="Image
+          2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img src="images/plumber.jpg" class="d-block w-100" alt="Image 3" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/Makeup.jpg" class="d-block w-100" alt="Image 4" />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#imageCarousel"
+        role="button"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#imageCarousel"
+        role="button"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <!-- Container with Three Cards -->
+    <!-- header -->
+    <div class="container">
+      <div class="row mt-3 mb-5">
+        <div class="col-lg-6 col-12">
+          <h2 class="font-weight-bold headercolour heading">
+            Popular Services
+          </h2>
+        </div>
+        <div class="col-lg-6 col-12 text-lg-end">
+          <a href="#" target="_blank" class="btn py-3 px-4"
+            >View all services</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- carousel of cards -->
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container mt-5">
+            <div class="row">
+              <div class="row d-flex">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/photo_1.jpg"
+                      class="card-img-top"
+                      alt="photo_1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Photography</h5>
+                      <p class="card-text">Get the shots you desire!</p>
+                      <a href="#" class="btn">See details</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/photo_2.jpg"
+                      class="card-img-top"
+                      alt="photo_2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Make-up</h5>
+                      <p class="card-text">Look you best!</p>
+                      <a href="#" class="btn">See details</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/photo_3.jpg"
+                      class="card-img-top"
+                      alt="photo_3"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Manicure</h5>
+                      <p class="card-text">Transform your fingertips!</p>
+                      <a href="#" class="btn">See details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container mt-5">
+            <div class="row">
+              <div class="row d-flex">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/photo_4.jpg"
+                      class="card-img-top"
+                      alt="photo_1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Massage</h5>
+                      <p class="card-text">Relax and unwind!</p>
+                      <a href="#" class="btn">See details</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/photo_5.jpg"
+                      class="card-img-top"
+                      alt="photo_5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Hairdressing</h5>
+                      <p class="card-text">Redefine your style!</p>
+                      <a href="#" class="btn">See details</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/photo_6.jpg"
+                      class="card-img-top"
+                      alt="photo_6"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Plumbing</h5>
+                      <p class="card-text">Get your pipes fixed!</p>
+                      <a href="#" class="btn">See details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container mt-5">
+            <div class="row">
+              <div class="row d-flex">
+                <!-- Card 7 -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/photo_7.jpg"
+                      class="card-img-top"
+                      alt="photo_7"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Electricians</h5>
+                      <p class="card-text">Light it up!</p>
+                      <a href="#" class="btn">See details</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/photo_8.jpg"
+                      class="card-img-top"
+                      alt="photo_2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Accessories and crafts</h5>
+                      <p class="card-text">Elevate your look!</p>
+                      <a href="#" class="btn">See details</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/photo_9.jpg"
+                      class="card-img-top"
+                      alt="photo_9"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Bakes</h5>
+                      <p class="card-text">Satisfy your cravings!</p>
+                      <a href="#" class="btn">See details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="features container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card custom-card1 m-3" style="max-width: none">
+            <div class="card-body text-center">
+              <span class="icon-users display-5"></span>
+              <h5 class="card-title mt-3">Our Services</h5>
+              <p class="card-text">
+                Unlock a world of possibilities with our diverse range of
+                services, tailored to meet your every need.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card custom-card1 m-3" style="max-width: none">
+            <div class="card-body text-center">
+              <span class="icon-people display-5"></span>
+              <h5 class="card-title mt-3">Service Provider</h5>
+              <p class="card-text">
+                Unlock Your Business Potential: Elevate Your Sales with Our
+                Cutting-Edge Platform! Sell your service with us!
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card custom-card1 m-3" style="max-width: none">
+            <div class="card-body text-center">
+              <span class="icon-book display-5"></span>
+              <h5 class="card-title mt-3">Support and Education</h5>
+              <p class="card-text">
+                Experience excellence in service and support like never before -
+                where your needs are our priority.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More features-->
+    <div class="section section-4">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-5">
+          <h2 class="pt-4 font-weight-bold heading headercolour mb-4">
+            Let's find the service that you are looking for!
+          </h2>
+          <p class="text-black-50">
+            It's not that hard to find the one you need!
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-between mb-5 ps-3 pe-3">
+        <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
+          <div>
+            <img src="images/back.jpg" alt="Image" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="d-flex feature-h">
+            <span class="wrap-icon me-3">
+              <span class="icon-search display-5"></span>
+            </span>
+            <div class="feature-text">
+              <h3 class="heading">Ease of search and booking</h3>
+              <p class="text-black-50">
+                Streamline your search and booking experience with effortless
+                efficiency!
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex feature-h">
+            <span class="wrap-icon me-3">
+              <span class="icon-person display-5"></span>
+            </span>
+            <div class="feature-text">
+              <h3 class="heading">Wide variety of services</h3>
+              <p class="text-black-50">
+                Find a wide range of service that caters to your specific needs!
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex feature-h">
+            <span class="wrap-icon me-3">
+              <span class="icon-security display-5"></span>
+            </span>
+            <div class="feature-text">
+              <h3 class="heading">Hassle-free and safe payment</h3>
+              <p class="text-black-50">
+                Say goodbye to the complexities of traditional transactions and
+                embrace seamless, effortless financial freedom!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cilents reviews-->
+    <div class="reviewsection section-5">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-6 mb-5">
+            <h2 class="headercolour font-weight-bold heading mb-4 mt-4">
+              Our Clients
+            </h2>
+            <p class="text-black-50">Let's hear what they say</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="person-wrap col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
+            <div class="h-100 person" style="text-align: center">
+              <img
+                src="images/person_1-min.jpg"
+                alt="Image"
+                class="img-fluid rounded-circle"
+                style="width: 100px; height: 100px; border-radius: 50%"
+              />
+              <div class="person-contents">
+                <h2 class="mb-0">James Doe</h2>
+                <span class="meta mb-3 mt-1">Photographer</span>
+                <p>
+                  Book Me streamlined my workflow, making it effortless to
+                  showcase my portfolio, connect with potential clients, and
+                  efficiently manage bookings, ultimately boosting my online
+                  visibility and business growth.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="person-wrap col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
+            <div class="h-100 person" style="text-align: center">
+              <img
+                src="images/person_2-min.jpg"
+                alt="Image"
+                class="img-fluid rounded-circle"
+                style="width: 100px; height: 100px; border-radius: 50%"
+              />
+              <div class="person-contents">
+                <h2 class="mb-0">Jean Smith</h2>
+                <span class="meta mb-3 mt-1">Hairdresser</span>
+                <p>
+                  Book Me has helped me significantly by establishing an online
+                  presence and effectively marketing my services, ultimately
+                  attracting a larger clientele and boosting my own business.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="person-wrap col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
+            <div class="h-100 person" style="text-align: center">
+              <img
+                src="images/person_3-min.jpg"
+                alt="Image"
+                class="img-fluid rounded-circle"
+                style="width: 100px; height: 100px; border-radius: 50%"
+              />
+              <div class="person-contents">
+                <h2 class="mb-0">Alicia Huston</h2>
+                <span class="meta mb-3 mt-1">Make-up Artist</span>
+                <p>
+                  Book Me helped me to streamline appointment scheduling and
+                  showcase my portfolio, significantly boosting my client base
+                  and overall business success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="container-fluid">
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img
+              class="mb-2"
+              src="/docs/4.3/assets/brand/bootstrap-solid.svg"
+              alt=""
+              width="24"
+              height="24"
+            />
+            <small class="d-block mb-3 text-muted">© 2017-2019</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
