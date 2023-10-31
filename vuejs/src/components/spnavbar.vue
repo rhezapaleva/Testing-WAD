@@ -1,6 +1,6 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top-navbar">
-    <div class="container" style="margin-left:0px;">
+    <div class="container-fluid" style="margin-left:0px; margin-right:0px;">
       <!-- Logo -->
       <a class="navbar-brand"><img src="../../public/BookMeLogo.png" alt="Logo" style="height: 100px; width:150px;"></a>
       <!-- Toggle Button -->
@@ -24,23 +24,25 @@
       >
         <!-- Sidebar Body -->
         <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-          <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+          <ul class="navbar-nav fs-5 flex-grow-1 pe-3">
             <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <router-link to="/SPHome" style="text-decoration: none; color:black;">Home</router-link>
             </li>
             <li class="nav-item mx-2">
-              <router-link to="/Dashboard" style="text-decoration: none;">Dashboard</router-link>
+              <router-link to="/Dashboard" style="text-decoration: none; color:black;">Dashboard</router-link>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#about">Learning Avenue</a>
+              <router-link to="/LearningAvenue" style="text-decoration: none; color:black">Learning Avenue</router-link>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#about">Permits/Requirements</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#about" style="color: green ; margin-left:150px">Switch to Buying</a>
+              <router-link to="/Permits&Requirements" style="text-decoration: none; color:black;">Permits/Requirements</router-link>
             </li>
           </ul>
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
+          >
+          <a href="#login" class="text-black text-decoration-none" style="color: green;">Switch to Buying</a>
+          </div>
         </div>
       </div>
     </div>

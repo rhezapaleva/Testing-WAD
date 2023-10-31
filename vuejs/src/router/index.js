@@ -15,16 +15,27 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
-  // {
-  //   path: '/sphome',
-  //   name: 'sphome',
-  //   component: () => import('../views/SPHome.vue')
-  // },
   {
     path: '/Dashboard',
     name: 'Dashboard',
     component: () => import('../views/Dashboard.vue')
+  },
+  {
+    path: '/SPHome',
+    name: 'SPHome',
+    component: () => import('../views/SPHome.vue')
+  },
+  {
+    path: '/LearningAvenue',
+    name: 'LearningAvenue',
+    component: () => import('../views/LearningAvenue.vue')
+  },
+  {
+    path: '/Permits&Requirements',
+    name: 'Permits&Requirements',
+    component: () => import('../views/Permits&Requirements.vue')
   }
+
 ]
 
 const router = createRouter({
